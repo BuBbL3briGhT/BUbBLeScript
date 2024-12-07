@@ -2,29 +2,12 @@
 const List = require("./lib/list"),
       Glider = require("./lib/glider"),
       Symbol = require("./lib/symbol"),
-      Keyword = require("./lib/keyword");
+      Keyword = require("./lib/keyword"),
+      Quoted = require("./lib/quoted");
 
 (function() {
   class BUbBLeScript {
       parse() {}
-  }
-
-  class Quoted {
-    constructor(value) {
-      this.value = value;
-    }
-
-    unquote() {
-      return this.value;
-    }
-
-    toString() {
-      return "'" + this.value;
-    }
-
-    inspect() {
-      return "'" + this.value.inspect;
-    }
   }
 
   class Syntax {};
